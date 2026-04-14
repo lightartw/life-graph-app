@@ -60,6 +60,26 @@ npm ci
 npm run dev
 ```
 
+## 编译与移动端 (Android) 测试
+
+将你代码打包，生成最终网页文件：
+
+```bash
+npm run build
+```
+
+将刚打包好的网页文件同步至 `android/` 原生工程里：
+
+```bash
+npx cap sync android
+```
+
+运行 Android Studio 进行测试：
+
+```bash
+npx cap open android
+```
+
 ## 提交代码 (Commit)
 
 提交前，请务必运行代码检查与格式化，拦截格式问题：
